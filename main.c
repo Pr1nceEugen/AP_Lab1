@@ -2,17 +2,17 @@
 #include <math.h>
 #include <Windows.h>
 
-double FirstFunctionResult(double x, double y)
+double R(double x, double y)
 {
     return ((x+2,45)+sqrt(fabs(x+pow(y, 2))));
 }
 
-double SecondFunctionResult(double x, double y, double z)
+double a(double x, double y)
 {
     return ((1+y)*(x+y/(pow(x, 2)+4)/(exp(-x-2)+(1/(pow(x,2)+4)))));
 }
 
-double ThirdFunctionResult(double x, double y, double z)
+double b(double x, double y, double z)
 {
     return ((1+cos(y-2))/(pow(x,4)/2+pow(sin(z), 2)));
 }
@@ -23,19 +23,19 @@ int main()
     SetConsoleOutputCP(1251);
     
     double x, y, z;
-    double TemporaryFunctionsResult;
+    double TempResult;
 
     printf("введіть значення x, y і z через пропуск\n");
     scanf("%lf%lf%lf",&x, &y, &z);
 
-    TemporaryFunctionsResult = FirstFunctionResult(x, y);
-    printf("шукане значення функції R = %f\n",TemporaryFunctionsResult);
+    TempResult = R(x, y);
+    printf("шукане значення функції R = %f\n",TempResult);
 
-    TemporaryFunctionsResult = SecondFunctionResult(x, y, z);
-    printf("шукане значення функції a = %f\n",TemporaryFunctionsResult);
+    TempResult = a(x, y);
+    printf("шукане значення функції a = %f\n",TempResult);
 
-    TemporaryFunctionsResult = ThirdFunctionResult(x, y, z);
-    printf("шукане значення функції b = %f\n",TemporaryFunctionsResult);
+    TempResult = b(x, y, z);
+    printf("шукане значення функції b = %f\n",TempResult);
 
     return 0;
 }
