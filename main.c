@@ -9,12 +9,12 @@ double R(double x, double y)
 
 double a(double x, double y)
 {
-    return ((1+y)*(x+y/(pow(x, 2)+4)/(exp(-x-2)+(1/(pow(x,2)+4)))));
+    return (1+y)*(x+y/(pow(x,2)+4))/(exp(-x-2)+1/(pow(x,2)+4));
 }
 
 double b(double x, double y, double z)
 {
-    return ((1+cos(y-2))/(pow(x,4)/2+pow(sin(z), 2)));
+    return (1+cos(y-2))/(pow(x,4)/2+pow(sin(z), 2));
 }
 
 int main()
