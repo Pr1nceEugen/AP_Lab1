@@ -4,7 +4,7 @@
 
 double R(double x, double y)
 {
-    return ((x+2,45)+sqrt(fabs(x+pow(y, 2))));
+    return ((x+2.45)+sqrt(fabs(x+pow(y, 2))));
 }
 
 double a(double x, double y)
